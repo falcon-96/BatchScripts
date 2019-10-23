@@ -1,0 +1,7 @@
+@echo off
+echo Hello %username%
+set /P passw=Password? 
+set lhs=%passw%
+set rhs=XD
+if "%lhs%"=="%rhs%" (echo Please Continue, %lhs% && Start Chrome www.google.com) else (start open_a_site.bat)
+exit
