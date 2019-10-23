@@ -1,0 +1,8 @@
+@echo off 
+set /P name= N A M E  P L E A S E ?
+echo W E L C O M E %name%
+set /P inp = A C T I V A T E ?  
+color 02
+:tricks
+echo %random%%random%%random%%random%%random%%random%%random%%random%%random%%random%
+goto tricks
