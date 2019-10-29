@@ -1,0 +1,15 @@
+@echo off
+set /a c=0
+:animate
+
+echo	ii	ii  iiiiiiii  ii       ii
+echo	ii	ii  ii	      ii       ii
+echo	iiiiii  iiiii     ii       ii
+echo	ii	ii  ii        ii       ii
+echo	ii	ii  ii        ii       ii
+echo	ii	ii  iiiiiiiii iiiiiiii iiiiiiii
+if %c%==9 (set /A c=1) else (set /a c=%c%+1)
+color %c%
+ping localhost -n 1>nul 
+cls
+goto animate
