@@ -1,0 +1,25 @@
+@echo off
+color 02
+set /A count =0
+echo =====================CHATROOM_1.0=======================================
+:func
+set /A count =%count%+1
+echo %count%:
+set /P uname=Name:
+set /P msg= Message:
+set control_name=admin
+set control_msg_exit=3xit
+if /i "%uname%"=="%control_name%" if "%msg%"=="%control_msg_exit%" (goto feedback)
+goto func
+:feedback
+echo =========================================================================
+set /p feeback= Ratings out of 5: 
+set /p f_suggestions= Suggestions: 
+echo [%date% %time%] %feeback% ---- %f_suggestions%>> feedback_chat.txt
+echo Thanks for using Chatroom 1.0
+echo 
+color 06
+pause
+echo on
+cmd
+
